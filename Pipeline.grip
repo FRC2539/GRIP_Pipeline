@@ -24,7 +24,7 @@
         <value>BILATERAL_FILTER</value>
       </grip:Input>
       <grip:Input step="1" socket="2">
-        <value>3.2075471698113227</value>
+        <value>0.7547169811320771</value>
       </grip:Input>
       <grip:Output step="1" socket="0" previewed="false"/>
     </grip:Step>
@@ -32,23 +32,23 @@
       <grip:Input step="2" socket="0"/>
       <grip:Input step="2" socket="1">
         <value>
-          <double>70.97256786884154</double>
-          <double>99.58314321695173</double>
+          <double>0.0</double>
+          <double>0.0</double>
         </value>
       </grip:Input>
       <grip:Input step="2" socket="2">
         <value>
-          <double>0.39548053579816944</double>
-          <double>31.71501706484642</double>
+          <double>0.0</double>
+          <double>7.169562519391867</double>
         </value>
       </grip:Input>
       <grip:Input step="2" socket="3">
         <value>
-          <double>108.01706248814794</double>
-          <double>118.65907584202571</double>
+          <double>103.64406779661016</double>
+          <double>111.37134052388288</double>
         </value>
       </grip:Input>
-      <grip:Output step="2" socket="0" previewed="false"/>
+      <grip:Output step="2" socket="0" previewed="true"/>
     </grip:Step>
     <grip:Step name="CV erode">
       <grip:Input step="3" socket="0"/>
@@ -126,12 +126,16 @@
   </steps>
   <connections>
     <grip:Connection>
+      <grip:Output step="3" socket="0" previewed="false"/>
+      <grip:Input step="4" socket="0"/>
+    </grip:Connection>
+    <grip:Connection>
       <grip:Output step="4" socket="0" previewed="false"/>
       <grip:Input step="5" socket="0"/>
     </grip:Connection>
     <grip:Connection>
-      <grip:Output step="5" socket="0" previewed="false"/>
-      <grip:Input step="6" socket="0"/>
+      <grip:Output step="2" socket="0" previewed="true"/>
+      <grip:Input step="3" socket="0"/>
     </grip:Connection>
     <grip:Connection>
       <grip:Output source="0" socket="0" previewed="false"/>
@@ -146,12 +150,8 @@
       <grip:Input step="2" socket="0"/>
     </grip:Connection>
     <grip:Connection>
-      <grip:Output step="3" socket="0" previewed="false"/>
-      <grip:Input step="4" socket="0"/>
-    </grip:Connection>
-    <grip:Connection>
-      <grip:Output step="2" socket="0" previewed="false"/>
-      <grip:Input step="3" socket="0"/>
+      <grip:Output step="5" socket="0" previewed="false"/>
+      <grip:Input step="6" socket="0"/>
     </grip:Connection>
   </connections>
   <settings>
